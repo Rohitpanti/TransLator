@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Veiw
+![header image](https://raw.github.com/Rohitpanti/TransLator/master/Veiw.png)
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -2,37 +2,97 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: rgb(198, 231, 242);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 3rem;
+  width: 100%;
+  background-color: darkslategray;
+  color: cornsilk;
+  position: sticky;
+  top:0px;
+}
+.Lang{
+  display: flex;
+  justify-content: center;
+}
+.fromlang{
+  display: flex;
+  align-items: center;
+  padding: 25px 20px;
+}
+.tolang{
+  display: flex;
+  align-items: center;
+  padding: 25px 20px;
+}
+select{
+  padding: 4px 15px;
+  border: 2px solid cyan;
+  background-color: black;
+  color: antiquewhite;
+  border-radius: 10px;
+}
+select:hover{
+  padding: 4px 25px;
+  border: 2px solid cyan;
+  background-color:bisque;
+  color: black;
+  border-radius: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.container{
+  display: flex;
+  padding: 5px 20px;
+  justify-content: center;
+}
+.inputArea textarea{
+    margin: 10px 20px;
+    padding: 5px 20px;
+    background-color: black;
+    color: antiquewhite;
+    border: 4px solid silver;
+    border-radius: 15px;
+    height: 40vh;
+    width: 40vw;;
+}
+.OutputArea textarea{
+    margin: 10px 20px;
+    padding: 5px 20px;
+    background-color: burlywood;
+    color:aliceblue;
+    height:40vh;
+    width: 40vw;
+    border: 4px solid black;
+    border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn{
+  margin-top: 30px;
+  padding: 5px 20px;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: darkslategray;
+  color: azure;
+}
+.btn:hover{
+  padding: 5px 20px;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: black;
+  color: burlywood;
+}
+
+@media only screen and (max-width: 650px) {
+  .Lang{
+    display: flex;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .container{
+    flex-direction: column;
   }
 }
